@@ -1,0 +1,4 @@
+6.5). Remove lw after sw in assign
+10). save the floating point registers -- for correctness itself, do this first
+11). f().a[g(1,2,3)], when function returns struct
+12). if(float)                  -- handle this -- done

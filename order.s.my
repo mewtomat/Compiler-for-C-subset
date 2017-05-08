@@ -1,0 +1,37 @@
+.text
+main:
+addi t0, $fp, -4
+lw t1, -8($fp)
+lw t2, -12($fp)
+add t1, t1, t2
+sw t1, 0(t0) 
+lw t0, 0(t0)
+addi t0, $fp, -8
+lw t1, -16($fp)
+lw t3, -4($fp)
+div t1, t1, t3
+sw t1, 0(t0) 
+lw t0, 0(t0)
+addi t0, $fp, -12
+lw t1, -24($fp)
+lw t4, -28($fp)
+add t1, t1, t4
+lw t5, -32($fp)
+lw t6, -28($fp)
+sub t5, t5, t6
+mult t1, t1, t5
+sw t1, 0(t0) 
+lw t0, 0(t0)
+addi t0, $fp, -4
+lw t1, -4($fp)
+lw t7, -16($fp)
+lw t8, -4($fp)
+div t7, t7, t8
+add t1, t1, t7
+lw t9, -8($fp)
+sub t1, t1, t9
+lw s0, -12($fp)
+add t1, t1, s0
+sw t1, 0(t0) 
+lw t0, 0(t0)
+

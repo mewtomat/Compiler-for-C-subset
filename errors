@@ -1,0 +1,20 @@
+In file included from parse.cc:5:0:
+ast.cpp: In member function ‘virtual std::string op_binary_astnode::generate_code(const SymbTab&, bool)’:
+ast.cpp:556:44: error: too few arguments to function ‘void genInstr(std::string, std::string, std::string, std::string, int)’
+     genInstr(id, tempreg1,tempreg1,tempreg2);
+                                            ^
+In file included from ast.cpp:1:0,
+                 from parse.cc:5:
+helper.cpp:181:6: note: declared here
+ void genInstr(string instruction, string regdest, string reg1, string reg2, int imm)
+      ^
+In file included from parse.cc:5:0:
+ast.cpp:578:45: error: too few arguments to function ‘void genInstr(std::string, std::string, std::string, std::string, int)’
+     genInstr("id",tempreg1,tempreg1,tempreg2);
+                                             ^
+In file included from ast.cpp:1:0,
+                 from parse.cc:5:
+helper.cpp:181:6: note: declared here
+ void genInstr(string instruction, string regdest, string reg1, string reg2, int imm)
+      ^
+make: *** [all] Error 1
